@@ -58,7 +58,7 @@ items: [
 </template>
 ```
 首先使用了item.id作为绑定的key值，我们来看下效果：
-[渲染效果demo](https://timrchen.github.io/Responsive-study-demo/)
+[渲染效果demo](https://timrchen.github.io/Responsive-study-demo/demo01)
 
 1.  改变第一个元素的id值，第一个li元素重新渲染，其余三个li元素与对照组速度始终保持一致，没有变化，说明li元素**单独**渲染
 2.  为了验证1.观点，我们对实验组按照升序进行排列，查看DOM结构，当改变第一个元素位置时，第一个li元素重新渲染，其余三个li元素不重新渲染且与对照组速度始终保持一致，说明第一个li元素单独渲染，验证1.结论
@@ -101,7 +101,7 @@ items: [
 </template>
 ```
 在实验二中，使用v-for提供的index参数作为绑定的key值，我们来看下效果：
-[渲染效果demo](https://timrchen.github.io/Responsive-study-demo/)
+[渲染效果demo](https://timrchen.github.io/Responsive-study-demo/demo02)
 
 1.  改变第一个元素的id值，第一个li元素与其余三个li元素与对照组速度始终保持一致，没有变化，说明绑定index值并未对li渲染造成影响
 2.  为了验证1.观点，我们对实验组按照升序进行排列，查看DOM结构，当改变第一个元素位置时，第一个li元素重新渲染，其余三个li元素也重新渲染均且与对照组速度始终保持一致，说明所有li元素均重新渲染，验证1.结论
@@ -144,7 +144,7 @@ items: [
 </template>
 ```
 在实验二中，使用v-for提供的key参数作为绑定的key值，我们来看下效果：
-[渲染效果demo](https://timrchen.github.io/Responsive-study-demo/)
+[渲染效果demo](https://timrchen.github.io/Responsive-study-demo/demo03)
 
 1.  改变第一个元素的id值，第一个li元素与其余三个li元素与对照组速度始终保持一致，没有变化，说明绑定key值并未对li渲染造成影响
 2.  为了验证1.观点，我们对实验组按照升序进行排列，查看DOM结构，当改变第一个元素位置时，第一个li元素重新渲染，其余三个li元素也重新渲染均且与对照组速度始终保持一致，说明所有li元素均重新渲染，验证1.结论

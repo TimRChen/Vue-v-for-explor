@@ -5,7 +5,7 @@
     </div>
     <ul class="show-animate">
       <li class="animate">对照组</li>
-      <li v-for="(item, key, index) in items" class="animate" :key="judge ? item.id : index">{{item.id}}</li>
+      <li v-for="(item, key, index) in items" class="animate" :key="judge ? item.id : key">{{item.id}}</li>
     </ul>
     <div class="btn-group">
       <div class="btn">
@@ -27,7 +27,7 @@
 export default {
   data() {
     return {
-      judge: true,
+      judge: false,
       items: [
         {
           id: 2,
