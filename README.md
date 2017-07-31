@@ -143,7 +143,7 @@ items: [
   </div>
 </template>
 ```
-在实验二中，使用v-for提供的key参数作为绑定的key值，我们来看下效果：
+在实验三中，使用v-for提供的key参数作为绑定的key值，我们来看下效果：
 [渲染效果demo](https://timrchen.github.io/Responsive-study-demo/demo03)
 
 1.  改变第一个元素的id值，第一个li元素与其余三个li元素与对照组速度始终保持一致，没有变化，说明绑定key值并未对li渲染造成影响
